@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HelloWorld from './views/HelloWorld.vue'
 import Blank from './views/Blank.vue'
 import Modal from './views/Modal.vue'
+import Dashboard from './views/Dashboard.vue'
 
 const routes = [
     {
@@ -17,7 +18,11 @@ const routes = [
         path : '/modal',
         component : Modal
     }
-
+,
+    {
+        path : '/dashboard',
+        component : Dashboard
+    }
 
 ]
 

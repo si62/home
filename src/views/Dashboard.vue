@@ -218,30 +218,43 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent, ref } from "vue";
 
-interface User {
+/*interface User {
   name: string;
   email: string;
   title: string;
   title2: string;
   status: string;
   role: string;
-}
+}*/
 
 export default defineComponent({
   setup() {
-    const testUser: User = {
+    /*const testUser: User = {
       name: "John Doe",
       email: "john@example.com",
       title: "Software Engineer",
       title2: "Web dev",
       status: "Active",
       role: "Owner",
-    };
+    };*/
 
-    const users = ref<User[]>([...Array(10).keys()].map(() => testUser));
+    const users = ref([...Array(10).keys()].map((i) => {
+      return {
+          name: "User Name " + i,
+          email: "user" + i + "@example.com",
+          title: "Title A " + i,
+          title2: "Title B " + i,
+          status: "Active " + i,
+          role: "Role " + i
+      }
+
+    }));
+    
+    
+    //<User[]>([...Array(10).keys()].map(() => testUser));
 
     return {
       users,

@@ -114,7 +114,7 @@
   </header>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent, ref } from "vue";
 import { useSidebar } from "../hooks/useSidebar";
 
