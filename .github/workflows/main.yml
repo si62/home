@@ -37,3 +37,10 @@ jobs:
             Repository: ${{ github.repository }}
             
             See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+
+      - name: Build-Vue
+        uses: xRealNeon/VuePagesAction@1.0.1
+        with:
+          username: 'si62'
+          reponame: 'home'
+          token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
