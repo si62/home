@@ -116,7 +116,7 @@
 
 <script>
 import { defineComponent, ref } from "vue";
-import { useSidebar } from "../hooks/useSidebar";
+import { useSidebar } from "../hooks/useSidebar.vue";
 
 export default defineComponent({
   setup(_, { emit }) {

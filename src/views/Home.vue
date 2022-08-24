@@ -1,10 +1,10 @@
 <template>
-<h1 class="text-3xl font-medium text-gray-700">Hello World</h1>
+  <h1 class="text-3xl font-medium text-gray-700"></h1>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   props: {
     msg: String
   }
